@@ -4,33 +4,24 @@ interface Props { t: Translations; }
 const { t } = Astro.props;
 ---
 
-<section
-  class="relative pt-16 overflow-hidden"
-  style="background: linear-gradient(180deg, #B8D2E8 0%, #CDDFF0 25%, #DCE9F5 50%, #ECF3FA 75%, #F5F8FC 100%); min-height: 680px;"
->
-  <!-- Staircase bars — absolutely positioned, anchored to bottom-right -->
-  <div
-    class="absolute bottom-0 right-0 flex items-end pointer-events-none"
-    style="gap: 10px; padding-right: 0; height: 100%;"
-    aria-hidden="true"
-  >
-    <div style="width: 155px; height: 42%; background: #C2D8EC; border-radius: 8px 8px 0 0;"></div>
-    <div style="width: 155px; height: 57%; background: #AECADF; border-radius: 8px 8px 0 0;"></div>
-    <div style="width: 155px; height: 72%; background: #96B7D2; border-radius: 8px 8px 0 0;"></div>
-    <div style="width: 155px; height: 86%; background: #7CA4C5; border-radius: 8px 8px 0 0;"></div>
-    <!-- Last bar goes off-screen to the right -->
-    <div style="width: 155px; height: 100%; background: #6090B8; border-radius: 8px 8px 0 0; margin-right: -30px;"></div>
+<section class="hero-section">
+  <!-- Staircase bars — bottom-aligned, overlapping, no rounded corners -->
+  <div class="hero-bars" aria-hidden="true">
+    <div class="hero-bar bar-1"></div>
+    <div class="hero-bar bar-2"></div>
+    <div class="hero-bar bar-3"></div>
+    <div class="hero-bar bar-4"></div>
+    <div class="hero-bar bar-5"></div>
   </div>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col lg:flex-row items-start lg:items-center" style="min-height: 600px; padding-top: 80px; padding-bottom: 80px;">
+  <!-- Content — z-index above bars -->
+  <div class="hero-content-wrap">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="hero-content">
 
-      <!-- Left: text content -->
-      <div class="flex-1 max-w-xl">
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-full px-4 py-1.5 mb-7">
-          <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="hero-badge">
+          <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
           </svg>
@@ -38,39 +29,150 @@ const { t } = Astro.props;
         </div>
 
         <!-- Headline -->
-        <h1
-          class="font-normal text-secondary leading-tight mb-7"
-          style="font-size: clamp(38px, 5vw, 60px); line-height: 1.1;"
-        >
+        <h1 class="hero-title">
           {t.hero.title1}<br />
           <strong class="font-extrabold text-primary">{t.hero.title2}</strong><br />
           <strong class="font-extrabold text-primary">{t.hero.title3}</strong>
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base text-text-muted leading-relaxed mb-9 max-w-sm lg:max-w-md">
-          {t.hero.subtitle}
-        </p>
+        <p class="hero-subtitle">{t.hero.subtitle}</p>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap gap-3">
-          <a
-            href="#get-started"
-            class="bg-primary text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-primary-dark transition-all hover:shadow-lg"
-          >
-            {t.hero.ctaPrimary}
-          </a>
-          <a
-            href="#how-it-works"
-            class="bg-white/70 border-2 border-secondary/40 text-secondary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white hover:border-secondary transition-all"
-          >
-            {t.hero.ctaSecondary}
-          </a>
+        <div class="hero-ctas">
+          <a href="#get-started" class="btn-primary">{t.hero.ctaPrimary}</a>
+          <a href="#how-it-works" class="btn-secondary">{t.hero.ctaSecondary}</a>
         </div>
       </div>
-
-      <!-- Spacer so bars are visible on right (bars are absolute) -->
-      <div class="hidden lg:block flex-1"></div>
     </div>
   </div>
 </section>
+
+<style>
+  /* ── Section ── */
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 64px; /* navbar height */
+    background: linear-gradient(180deg, #B5D0E8 0%, #CCDDF0 30%, #DCE9F5 60%, #EDF4FA 85%, #F5F8FC 100%);
+  }
+
+  /* ── Bars ── */
+  .hero-bars {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end; /* grow upward from bottom */
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .hero-bar {
+    border-radius: 0; /* no rounded corners */
+    position: relative;
+    width: 150px;
+    flex-shrink: 0;
+  }
+
+  /* Overlap: each bar shifts left to cover part of previous */
+  .bar-2, .bar-3, .bar-4, .bar-5 { margin-left: -18px; }
+
+  /* z-index: taller bars on top */
+  .bar-1 { height: 40%; background: #C8DBEC; z-index: 1; }
+  .bar-2 { height: 56%; background: #B2CBDF; z-index: 2; }
+  .bar-3 { height: 72%; background: #98B8D2; z-index: 3; }
+  .bar-4 { height: 86%; background: #7EA5C5; z-index: 4; }
+  .bar-5 { height: 100%; background: #6291B8; z-index: 5; margin-right: -40px; }
+
+  /* ── Content ── */
+  .hero-content-wrap {
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-content {
+    max-width: 560px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(4px);
+    border: 1px solid #DDEAF5;
+    border-radius: 9999px;
+    padding: 6px 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.1;
+    font-weight: 400;
+    color: #194261;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    color: #718096;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 420px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn-primary {
+    background: #0042A5;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { background: #00318A; box-shadow: 0 4px 16px rgba(0,66,165,0.3); }
+
+  .btn-secondary {
+    background: rgba(255,255,255,0.7);
+    color: #194261;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border: 2px solid rgba(25,66,97,0.3);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .btn-secondary:hover { background: white; border-color: #194261; }
+
+  /* ── Mobile ── */
+  @media (max-width: 1023px) {
+    .hero-bar { width: 68px; }
+    .bar-2, .bar-3, .bar-4, .bar-5 { margin-left: -8px; }
+    .bar-5 { margin-right: -16px; }
+
+    .hero-content {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      max-width: 100%;
+    }
+
+    .hero-title { font-size: clamp(30px, 8vw, 44px); }
+
+    .hero-subtitle { max-width: 100%; }
+
+    .btn-primary, .btn-secondary { padding: 12px 24px; }
+  }
+</style>
