@@ -7,13 +7,12 @@ interface Props {
 }
 
 const { lang, t } = Astro.props;
-const base = import.meta.env.BASE_URL;
 
 const langPaths: Record<Lang, string> = {
-  en: `${base}/`,
-  de: `${base}/de`,
-  fr: `${base}/fr`,
-  es: `${base}/es`,
+  en: '/',
+  de: '/de',
+  fr: '/fr',
+  es: '/es',
 };
 ---
 
@@ -25,8 +24,8 @@ const langPaths: Record<Lang, string> = {
     <div class="flex items-center justify-between h-16 lg:h-18">
       <!-- Logo -->
       <a href={langPaths[lang]} class="flex items-center gap-2 shrink-0">
-        <img src={`${base}/logo-icon.png`} alt="Tenants10" class="h-9 w-9" />
-        <img src={`${base}/logo-text.png`} alt="Tenants10" class="h-6" />
+        <img src="/logo-icon.png" alt="Tenants10" class="h-9 w-9" />
+        <img src="/logo-text.png" alt="Tenants10" class="h-6" />
       </a>
 
       <!-- Desktop Nav -->

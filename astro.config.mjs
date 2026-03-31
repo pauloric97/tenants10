@@ -2,8 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://pauloric97.github.io',
-  base: '/tenants10',
+  site: 'https://earnest-croissant-27064b.netlify.app',
   integrations: [tailwind()],
   i18n: {
     defaultLocale: 'en',
