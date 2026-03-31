@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "title": "Tenants10 — Gestión Digital de Edificios",
+    "description": "Tenants10 reúne comunicación, solicitudes de mantenimiento, gestión de documentos y reservas de espacios comunes en un espacio de trabajo digital. Para el mercado de alquiler suizo."
+  },
+  "nav": {
+    "features": "Funciones",
+    "howItWorks": "Cómo funciona",
+    "whoWeHelp": "Para quién",
+    "faq": "FAQ",
+    "bookDemo": "Reservar demo"
+  },
+  "hero": {
+    "badge": "Diseñado para edificios suizos",
+    "title1": "Deje de gestionar edificios con",
+    "title2": "Hojas de Cálculo",
+    "title3": "y Chats Grupales",
+    "subtitle": "Tenants10 reúne comunicación, solicitudes de mantenimiento, gestión de documentos y reservas de espacios comunes en un espacio de trabajo digital. Para el mercado de alquiler suizo.",
+    "ctaPrimary": "Reservar demo gratuita",
+    "ctaSecondary": "Ver cómo funciona"
+  },
+  "stats": {
+    "label": "Diseñado para el mercado de alquiler suizo",
+    "languages": { "value": "4", "label": "Idiomas disponibles", "detail": "EN, DE, FR, IT" },
+    "time": { "value": "80%", "label": "Menos tiempo en tareas administrativas" },
+    "documents": { "value": "100%", "label": "Gestión documental digital" },
+    "access": { "value": "24/7", "label": "Acceso desde cualquier dispositivo" }
+  },
+  "whoWeHelp": {
+    "label": "Para quién",
+    "title1": "Una plataforma.",
+    "title2": "Tres audiencias.",
+    "title3": "Cero caos.",
+    "subtitle": "Ya sea que alquile, posea o administre — Tenants10 elimina la fricción de las operaciones diarias del edificio.",
+    "tabs": {
+      "tenants": "Inquilinos",
+      "owners": "Propietarios",
+      "propertyManagers": "Administradores"
+    },
+    "tenants": {
+      "title": "Su edificio, finalmente organizado",
+      "subtitle": "Sin más grupos de WhatsApp, avisos impresos o dudas sobre si la lavandería está libre. Todo lo que necesita como inquilino en un solo lugar.",
+      "features": [
+        { "title": "Comunicación directa", "description": "con la administración — sin correos perdidos ni llamadas sin respuesta." },
+        { "title": "Solicitudes de mantenimiento", "description": "enviadas y seguidas en tiempo real, con visibilidad completa del estado." },
+        { "title": "Reservar la lavandería", "description": "plazas de aparcamiento y espacios comunes — al instante, sin conflictos." },
+        { "title": "Todos los documentos", "description": "contratos, reglamentos, protocolos — siempre accesibles, siempre actualizados." }
+      ],
+      "cta": "Simplifica tu vida en el edificio"
+    },
+    "owners": {
+      "title": "Visibilidad total, cero microgestión",
+      "subtitle": "Sepa lo que ocurre en su propiedad sin estar involucrado en cada conversación. Manténgase informado sin sentirse abrumado.",
+      "features": [
+        { "title": "Seguimiento de mantenimiento", "description": "vea cada solicitud y su estado, sin ser el intermediario." },
+        { "title": "Acceso a documentos", "description": "todos los contratos, protocolos e informes en un lugar organizado." },
+        { "title": "Comunicación con inquilinos", "description": "transparente, registrada y profesional — siempre trazable." },
+        { "title": "Uso de espacios", "description": "seguimiento del uso de instalaciones comunes en su propiedad." }
+      ],
+      "cta": "Cómo usan Tenants10 los propietarios"
+    },
+    "propertyManagers": {
+      "title": "Gestione más edificios con menos esfuerzo",
+      "subtitle": "Una plataforma para todas sus propiedades. Sin más cambios entre herramientas, grupos de WhatsApp y hojas de cálculo.",
+      "features": [
+        { "title": "Panel multi-edificio", "description": "todas sus propiedades, equipos y tareas en un solo lugar." },
+        { "title": "Flujos de trabajo automatizados", "description": "enrutamiento de mantenimiento, notificaciones y seguimientos automáticos." },
+        { "title": "Incorporación de inquilinos", "description": "contratos digitales y distribución de documentos en minutos." },
+        { "title": "Informes para propietarios", "description": "informes instantáneos para propietarios, auditorías y revisiones de cumplimiento." }
+      ],
+      "cta": "Gestione de forma más inteligente"
+    }
+  },
+  "howItWorks": {
+    "label": "Cómo funciona",
+    "title1": "En marcha",
+    "title2": "en tres simples pasos",
+    "subtitle": "Sin configuración compleja. Sin conocimientos técnicos. Gestionamos la integración para que usted pueda centrarse en lo que importa.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Cuéntenos sobre su edificio",
+        "description": "Comparta los detalles del edificio — número de unidades, desafíos actuales y lo que más necesita. Adaptamos Tenants10 a su situación específica."
+      },
+      {
+        "number": "02",
+        "title": "Nosotros lo configuramos todo",
+        "description": "Nuestro equipo configura su espacio de trabajo, sube los documentos existentes y crea accesos para todas las partes — inquilinos, propietarios y administradores. Cero esfuerzo de su parte."
+      },
+      {
+        "number": "03",
+        "title": "Su edificio se vuelve digital",
+        "description": "Todos obtienen acceso. La comunicación fluye por un canal. El mantenimiento se rastrea. Las reservas funcionan en tiempo real. El caos es reemplazado por la claridad."
+      }
+    ]
+  },
+  "keyFeatures": {
+    "label": "Funciones principales",
+    "title1": "Todo lo que un edificio necesita.",
+    "title2": "Nada que no necesite.",
+    "subtitle": "Cuatro pilares que cubren cada aspecto de la gestión diaria — desde el primer mensaje hasta el último documento.",
+    "features": [
+      {
+        "icon": "chat",
+        "title": "Comunicación centralizada",
+        "description": "Reemplace los grupos de WhatsApp fragmentados, hilos de correo y avisos en papel con un canal estructurado. Cada mensaje está registrado, buscable y atribuido."
+      },
+      {
+        "icon": "wrench",
+        "title": "Mantenimiento y Operaciones",
+        "description": "Los inquilinos envían solicitudes al instante. Los administradores asignan, priorizan y rastrean cada ticket de la denuncia a la resolución. Sin llamadas telefónicas."
+      },
+      {
+        "icon": "calendar",
+        "title": "Reservas de espacios",
+        "description": "Lavanderías, plazas de aparcamiento, espacios compartidos — reservados en segundos, sin conflictos. Disponibilidad en tiempo real visible para todos."
+      },
+      {
+        "icon": "document",
+        "title": "Centro de documentos",
+        "description": "Contratos, reglamentos, protocolos, avisos — organizados, buscables y siempre disponibles. Comparta con partes específicas y actualice al instante."
+      }
+    ]
+  },
+  "promise": {
+    "label": "Nuestra promesa",
+    "title": "AHORRE TIEMPO O NOS VAMOS.",
+    "description": "No creemos en contratos largos ni en integraciones complejas. Si Tenants10 no le ahorra tiempo en los primeros 30 días, se va. Sin preguntas. Sin tarifas.",
+    "cta": "Reservar una demo en vivo"
+  },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "title1": "¿Preguntas?",
+    "title2": "Tenemos respuestas.",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo lleva configurar Tenants10 para mi edificio?",
+        "answer": "La mayoría de los edificios están completamente configurados en 48 horas. Nuestro equipo gestiona toda la configuración — solo tiene que responder algunas preguntas."
+      },
+      {
+        "question": "¿Está Tenants10 disponible en los cuatro idiomas nacionales suizos?",
+        "answer": "Sí. La plataforma está completamente disponible en alemán, francés, italiano e inglés. Los inquilinos pueden elegir su idioma preferido de forma independiente."
+      },
+      {
+        "question": "¿Los inquilinos necesitan descargar una aplicación?",
+        "answer": "No se requiere descarga. Los inquilinos acceden a todo a través de un navegador web en cualquier dispositivo. También hay una aplicación nativa para iOS y Android."
+      },
+      {
+        "question": "¿Qué pasa si mi edificio ya usa otras herramientas?",
+        "answer": "Migramos sus documentos y datos existentes como parte de la integración. No se requiere entrada manual de datos."
+      },
+      {
+        "question": "¿Están seguros mis datos?",
+        "answer": "Todos los datos se almacenan en servidores suizos, cifrados en reposo y en tránsito. Cumplimos plenamente con la ley suiza de protección de datos (LPD) y el RGPD."
+      },
+      {
+        "question": "¿Cuánto cuesta Tenants10?",
+        "answer": "El precio se basa en el tamaño del edificio y el número de unidades. Ofrecemos una prueba gratuita de 30 días sin tarjeta de crédito. Reserve una demo para un presupuesto personalizado."
+      }
+    ]
+  },
+  "getStarted": {
+    "label": "Comenzar",
+    "title1": "¿Listo para simplificar su",
+    "title2": "gestión de edificios?",
+    "subtitle": "Cuéntenos sobre su edificio. Le mostraremos exactamente cómo Tenants10 se adapta a su situación — sin compromiso, sin presión.",
+    "form": {
+      "title": "Envíenos los detalles de su edificio",
+      "subtitle": "Le responderemos en 24 horas con una demostración personalizada.",
+      "name": "Nombre",
+      "namePlaceholder": "Su nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "su@email.com",
+      "role": "Su rol",
+      "rolePlaceholder": "Seleccione su rol",
+      "roles": ["Inquilino", "Propietario", "Administrador", "Otro"],
+      "units": "Unidades / Edificios",
+      "unitsPlaceholder": "ej. 24 unidades, 2 edificios",
+      "challenge": "Mayor desafío hoy",
+      "challengePlaceholder": "¿Cuál es el principal punto de dolor en su gestión de edificios ahora mismo?",
+      "submit": "Enviar detalles del edificio",
+      "privacy": "Sus datos permanecen en Suiza. Sin spam, sin compartir con terceros.",
+      "successTitle": "¡Gracias!",
+      "successMessage": "Nos pondremos en contacto en 24 horas."
+    }
+  },
+  "footer": {
+    "tagline": "Gestión digital para edificios suizos. Una app para inquilinos, propietarios y administradores.",
+    "product": {
+      "title": "Producto",
+      "links": [
+        { "label": "Funciones", "href": "#features" },
+        { "label": "Cómo funciona", "href": "#how-it-works" },
+        { "label": "Para quién", "href": "#who-we-help" },
+        { "label": "Reservar demo", "href": "#get-started" }
+      ]
+    },
+    "company": {
+      "title": "Empresa",
+      "links": [
+        { "label": "Sobre nosotros", "href": "#" },
+        { "label": "Empleo", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Contacto", "href": "#" }
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "links": [
+        { "label": "Política de privacidad", "href": "#" },
+        { "label": "Términos de servicio", "href": "#" },
+        { "label": "Política de cookies", "href": "#" },
+        { "label": "Aviso legal", "href": "#" }
+      ]
+    },
+    "copyright": "© 2026 Tenants10. Todos los derechos reservados. Made in Switzerland.",
+    "madeBy": "by Renan B."
+  },
+  "whatsapp": {
+    "tooltip": "Contáctenos en WhatsApp"
+  }
+}

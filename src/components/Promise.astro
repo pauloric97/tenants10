@@ -1,0 +1,39 @@
+---
+import type { Translations } from '../i18n/utils';
+interface Props { t: Translations; }
+const { t } = Astro.props;
+---
+
+<section class="py-20 bg-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <!-- Left: Content -->
+      <div class="flex-1 max-w-lg">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200 mb-4">{t.promise.label}</p>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6">
+          {t.promise.title}
+        </h2>
+        <p class="text-blue-100 text-base leading-relaxed mb-8">
+          {t.promise.description}
+        </p>
+        <a
+          href="#get-started"
+          class="inline-block border-2 border-white text-white px-7 py-3 rounded-full font-semibold text-sm hover:bg-white hover:text-primary transition-all"
+        >
+          {t.promise.cta}
+        </a>
+      </div>
+
+      <!-- Right: placeholder (replace with video/screenshot) -->
+      <div class="flex-1 w-full max-w-lg min-h-[300px] border-2 border-dashed border-blue-400/40 rounded-2xl flex items-center justify-center">
+        <div class="text-center text-blue-300/60 p-8">
+          <svg class="w-14 h-14 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.069A1 1 0 0121 8.87v6.26a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+          </svg>
+          <p class="text-xs font-medium">Video / Screenshot</p>
+          <p class="text-xs mt-1 opacity-60">Replace with product demo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
